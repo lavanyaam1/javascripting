@@ -1,6 +1,6 @@
 const text = 'It was sunny in the morning but now it is to cold';
 
-function chechRepeatingWords(sentence) {
+function checkRepeatingWords(sentence) {
     sentence=sentence.toLowerCase();
     const words = sentence.split(' ');
     let flag = 0;
@@ -15,7 +15,7 @@ function chechRepeatingWords(sentence) {
             wordMap.set(words[index], 1);
         }
     }
-    if (flag === 1) {
+    if (flag) {
         console.log("String contains repeating words");
     } else {
         console.log("Strings does not contain repeating words");
